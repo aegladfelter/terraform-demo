@@ -2,8 +2,8 @@
 variable name {default="acme"}
 variable project {}
 variable credentials {}
-variable region {default = "us-east-1"}
-variable zones { default = ["us-east-1", "us-east-1"] }
+variable region {default = "us-east1-a"}
+variable zones { default = ["us-east1-a", "us-east1-b"] }
 variable env { default = "dev" }
 variable network_name {default = "acme demo network"}
 variable image {default="ubuntu-os-cloud/ubuntu-1804-lts"}
