@@ -1,11 +1,11 @@
 
-variable name {default="ACME DEMO"}
+variable name {default="acme"}
 variable project {}
 variable credentials {}
-variable region {default = "europe-west2"}
-variable zones { default = ["europe-west2-a", "europe-west2-b"] }
+variable region {default = "us-east-1"}
+variable zones { default = ["us-east-1", "us-east-1"] }
 variable env { default = "dev" }
-variable network_name {default = "xcloud network"}
+variable network_name {default = "acme demo network"}
 variable image {default="ubuntu-os-cloud/ubuntu-1804-lts"}
 
 variable appserver_count { default = 1 }

@@ -4,10 +4,10 @@
 # }
 output "vpc-name" {
   # value = var.enable_autoscaling ? "${google_compute_instance_template.webserver[0].self_link}" : ""
-  value = google_compute_network.xcloud-vpc.name
+  value = google_compute_network.acme-vpc.name
 }
 output "subnet-self_link" {
   # value = var.enable_autoscaling ? "${google_compute_instance_template.webserver[0].self_link}" : ""
-  value = google_compute_subnetwork.xcloud-subnet.self_link
+  value = google_compute_subnetwork.acme-subnet.self_link
 }
 

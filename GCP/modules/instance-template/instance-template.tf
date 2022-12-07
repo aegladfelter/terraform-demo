@@ -4,7 +4,7 @@ data "template_file" "init" {
 
 resource "google_compute_instance_template" "ws-instance_template" {
   count = var.enable_autoscaling ? 1:0
-  name         = "${var.name}-webserver-instance-template"
+  name         = "webserver-instance-template"
   project      = var.project
   machine_type = var.instance_type
   region       = var.region
