@@ -51,12 +51,12 @@ module "vpc" {
   name = var.name
 }
 
-#create a postgres sql database
-module "database" {
-  count  = var.no_of_db_instances
-  source = "./modules/database"
-  # nat_ip = module.microservice-instance[0].nat_ip[0]
-  no_of_db_instances = var.no_of_db_instances
-  db_user = var.db_user
-  db_password = var.db_password
-}
+# #create a postgres sql database
+# module "database" {
+#   count  = var.no_of_db_instances
+#   source = "./modules/database"
+#   # nat_ip = module.microservice-instance[0].nat_ip[0]
+#   no_of_db_instances = var.no_of_db_instances
+#   db_user = var.db_user
+#   db_password = var.db_password
+# }
